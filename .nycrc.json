@@ -1,0 +1,45 @@
+{
+  "all": true,
+  "cache": true,
+  "check-coverage": true,
+  "instrument": true,
+  "per-file": false,
+  "sourceMap": false,
+
+  "statements": 90,
+  "branches": 80,
+  "functions": 90,
+  "lines": 90,
+
+  "extension": [
+    ".js",
+    ".vue"
+  ],
+  "include": [
+    "**/*.js",
+    "**/*.vue"
+  ],
+  "exclude": [
+    ".history",
+    ".nuxt",
+    ".tmp",
+    "dist",
+    "node_modules",
+    "tests",
+    "**/*.spec.js",
+    "mochapack.config.js",
+    "nuxt.config.js",
+    "**/mutation-types.js",
+    "middleware",
+    "**/backend-api.mocks.js",
+    "config"
+  ],
+
+  "reporter": [
+    "text",
+    "text-summary",
+    "html"
+  ],
+  "temp-dir": "tests/.nyc_temp",
+  "report-dir": "tests/coverage"
+}

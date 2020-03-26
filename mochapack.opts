@@ -1,0 +1,9 @@
+--colors
+--full-trace
+--recursive
+--reporter spec
+--require tests/setup
+--slow 1000
+--timeout 1600
+--webpack-config mochapack.config.js
+{,!(node_modules)/**/}*.spec.js

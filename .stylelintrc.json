@@ -1,0 +1,13 @@
+{
+  "processors": ["@mapbox/stylelint-processor-arbitrary-tags"],
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "indentation": [2, {
+      "baseIndentLevel": 1
+    }],
+    "no-empty-source": null,
+    "selector-pseudo-element-no-unknown": [true, {
+      "ignorePseudoElements": ["v-deep"]
+    }]
+  }
+}
