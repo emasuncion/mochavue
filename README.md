@@ -1,6 +1,6 @@
-# mochavue
+# Mocha+Chai with Vue.js
 
-> This is a sample project to demonstrate Mocha+Chai with Nuxt.js
+> This is a sample project to demonstrate Mocha+Chai with Vue.js and Nuxt.js as the framework
 
 ## Build Setup
 
@@ -21,6 +21,18 @@ $ npm run start
 
 ## Generate static project
 $ npm run generate
+
+## Run unit tests
+$ npm run test
+
+## Run unit tests with hot reload
+$ npm run watch
+
+## Run unit tests with code coverage analysis
+$ npm run coverage
+
+## Run production bundle analysis
+$ npm run analyze
 
 # If using Yarn as package manager
 ## Install dependencies
