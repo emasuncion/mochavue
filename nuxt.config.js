@@ -1,4 +1,4 @@
-import colors from 'vuetify/es5/util/colors'
+import colors from 'vuetify/es5/util/colors.js';
 
 export default {
   mode: 'spa',
@@ -65,5 +65,9 @@ export default {
     */
     extend (config, ctx) {
     }
-  }
+  },
+  server: {
+    host: '0.0.0.0',
+    port: 3000
+  },
 }

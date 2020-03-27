@@ -62,6 +62,7 @@
         <nuxt />
       </v-container>
     </v-content>
+    <AppHeader />
     <v-navigation-drawer
       v-model="rightDrawer"
       :right="right"
@@ -89,29 +90,32 @@
 </template>
 
 <script>
-export default {
-  data () {
-    return {
-      clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+  import AppHeader from '~/components/AppHeader.vue';
+
+  export default {
+    components: {AppHeader},
+    data() {
+      return {
+        clipped: false,
+        drawer: false,
+        fixed: false,
+        items: [
+          {
+            icon: 'mdi-apps',
+            title: 'Welcome',
+            to: '/'
+          },
+          {
+            icon: 'mdi-chart-bubble',
+            title: 'Inspire',
+            to: '/inspire'
+          }
+        ],
+        miniVariant: false,
+        right: true,
+        rightDrawer: false,
+        title: 'Mocha+Chai with Nuxt.js'
+      };
     }
-  }
-}
+  };
 </script>

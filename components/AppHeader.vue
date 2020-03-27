@@ -1,27 +1,30 @@
- <template>
+<template>
   <div>
-    <button class="btn" v-show="loggedIn">Logout</button>
+    <button v-show="loggedIn" class="btn">
+      Logout
+    </button>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app-header',
-  data() {
-    return {
-      loggedIn: false
-    }
-  },
-  mounted() {
-   this.func1();
-  },
-  methods: {
-    func1() {
-      func2();
+  export default {
+    name: 'AppHeader',
+    data() {
+      return {
+        loggedIn: true
+      };
     },
-    func2() {
-      console.log('this is to test');
+    mounted() {
+      this.func1();
+    },
+    methods: {
+      func1() {
+        this.func2();
+      },
+      func2() {
+        // eslint-disable-next-line
+        console.log('this is to test');
+      }
     }
-  }
-}
+  };
 </script>

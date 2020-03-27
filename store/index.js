@@ -1,7 +1,10 @@
+/* eslint-disable no-shadow */
+/* eslint-disable no-param-reassign */
+
 import {
   SET_CATEGORIES,
   SET_ERROR
-} from '~/store/mutations.js';
+} from '~/store/mutation-types';
 
 export const state = () => ({
   isLoggedIn: false,
@@ -17,7 +20,7 @@ export const getters = {
 
 export const mutations = {
   [SET_CATEGORIES](state, data) { state.categories = data; },
-  [SET_ERROR](state, data) { state.error = data; },
+  [SET_ERROR](state, data) { state.error = data; }
 };
 
 export const actions = {

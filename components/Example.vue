@@ -14,20 +14,20 @@
 </template>
 
 <script>
-export default {
-  name: 'Example',
+  export default {
+    name: 'Example',
 
-  data () {
-    return {
-      message: 'Hello world',
-      username: ''
-    }
-  },
+    data() {
+      return {
+        message: 'Hello world!',
+        username: ''
+      };
+    },
 
-  computed: {
-    error () {
-      return this.username.trim().length < 7
+    computed: {
+      error() {
+        return this.username.trim().length < 7;
+      }
     }
-  }
-}
+  };
 </script>
